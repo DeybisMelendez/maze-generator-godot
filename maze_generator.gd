@@ -56,7 +56,7 @@ func generate_maze():
 	#get cells
 	cells = get_used_cells_by_id(PATH_ID)
 	#generate maze
-	while visited_cells.size() < cells.size() - 1:
+	while visited_cells.size() < cells.size():
 		var neighbours = neighbours_have_not_been_visited(current_cell)
 		if neighbours.size() > 0:
 			var random_neighbour = neighbours[randi()%neighbours.size()]
